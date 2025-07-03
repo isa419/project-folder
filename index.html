@@ -3,71 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StudyGenie</title>
-    <link rel="stylesheet" href="styles/styles.css"/>
+    <title>Wanderlust Adventures - Your Next Journey Awaits!</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="header">
-        <nav class="nav">
-            <a href="#home">Home</a>
-            <a href="#features">Features</a>
-            <a href="#pricing">Pricing</a>
-            <a href="#resources">Resources</a>
-            <a href="#demo" class="demo-button">Demo</a>
-            <a href="#signup" class="signup-button">Sign Up</a>
+
+    <header>
+        <h1>Wanderlust Adventures- Your Next Adventure Awaits!</h1>
+        <p>Discover the world of serene beauty with Us</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
     </header>
-    <section class="hero-section">
-        <div class="hero-overlay">
-            <h1>Transform Your Study Experience with AI</h1>
-            <p>
-                Unlock your potential with StudyGenie, your personal AI study assistant.
-                Create customized study plans and ace your exams with ease!
-            </p>
-            <div class="hero-buttons">
-                <a href="#try" class="button try-button">Try</a>
-                <a href="#learn-more" class="button learn-more-button">Learn More</a>
-            </div>
-        </div>
-    </section>
 
-    <section class="features">
-        <h2>Discover How StudyGenie Transforms Your Study Experience Effortlessly</h2>
-        <section class="image-section">
-            <div class="woman-image">
-                <img src="assets/boy reading.jpg" alt="boy reading happily" class="boy-feature" />
+    <div class="container">
+        <section id="about">
+            <h2>About Wanderlust Adventures</h2>
+            <p>We believe travel should be more than just visiting places; it should be an experience. 
+                At Wanderlust Adventures, we craft unique and unforgettable journeys, connecting you with cultures, nature, and exhilarating experiences across the globe. 
+                From serene beach getaways to thrilling mountain treks, your perfect adventure awaits!</p>
+            <p>Our team of experienced travel enthusiasts is dedicated to providing personalized service, ensuring every detail of your trip is handled with care.
+                 Let us turn your travel dreams into reality.</p>
+        </section>
+
+        ---
+
+        <section id="destinations">
+            <h2>Popular Destinations</h2>
+            <ul>
+                <li><strong>Machu Picchu, Peru:</strong> Explore ancient Inca history.</li>
+                <li><strong>Kyoto, Japan:</strong> Immerse yourself in traditional Japanese culture.</li>
+                <li><strong>Maasai Mara, Kenya:</strong> Witness the magnificent wildlife migration.</li>
+                <li><strong>Iceland's Golden Circle:</strong> Discover stunning landscapes and geothermal wonders.</li>
+            </ul>
+            <p>Ready to explore? <a href="#">Browse All Destinations</a></p>
+            <div class="container">
+        <section id="ai-trip-planner">
+            <h2>AI-Powered Dream Trip Planner</h2>
+            <p>Tell us about your ideal adventure, and our AI will suggest a destination tailored for you!</p>
+            <div class="ai-input-group">
+                <label for="dreamTripInput">Describe your dream trip (e.g., "relaxing beach vacation," "adventurous mountain hike," "cultural city break in Europe"):</label>
+                <textarea id="dreamTripInput" rows="4" placeholder="I'm looking for..."></textarea>
+                <button id="getAiSuggestionBtn">Get My AI Suggestion</button>
+            </div>
+            <div id="aiSuggestionOutput" class="ai-output">
+                <p class="placeholder-text">Your personalized trip suggestion will appear here!</p>
             </div>
         </section>
-        <div class="feature-card">
-            <h3>Personalized Learning Made Simple with Our Innovative AI Technology</h3>
-            <p>StudyGenie analyzes your notes and creates tailored study plans just for you.</p>
-            <a href="#try">Try</a>
         </div>
-        <div class="feature-card"> <div class="woman-image">
-                <img src="assets/girls discussing.jpg" alt="girls reading" class="girls" />
+        </section>
+
+        ---
+
+        <section id="contact">
+            <h2>Get In Touch</h2>
+            <p>Have questions or ready to book your next adventure? Contact us today!</p>
+            <p>Email: <a href="mailto:info@wanderlustadventures.com">info@wanderlustadventures.com</a></p>
+            <p>Phone: +254116652739</p>
+            <form action="#" method="POST">
+                <p>
+                    <label for="name">Your Name:</label><br>
+                    <input type="text" id="name" name="name" required>
+                </p>
+                <p>
+                    <label for="email">Your Email:</label><br>
+                    <input type="email" id="email" name="email" required>
+                </p>
+                <p>
+                    <label for="message">Your Message:</label><br>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </p>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Wanderlust Adventures. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://www.facebook.com/yourhandle" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.twitter.com/yourhandle" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/yourhandle" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.pinterest.com/yourhandle" target="_blank" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
             </div>
-            <h3>Generate Quizzes and Flashcards Instantly for Effective Learning</h3>
-            <p>Our tool generates quizzes and flashcards based on your unique study materials.</p>
-            <a href="#learn">Learn</a>
-        </div>
-        <div class="feature-card">
-            <div class="woman-image">
-                <img src="assets/boy studying.jpg" alt="girls reading" class="girls" />
-            </div>
-            <h3>Stay Organized with Smart Study Reminders</h3>
-            <p>Receive timely reminders to keep your study session on track and productive.</p>
-            <a href="#join">Join</a>
-        </div>
-    </section>
-    <footer class="footer">
-        <div class="footer-content">
-            <nav class="footer-nav">
-                <a href="#about">About Us</a>
-                <a href="#contact">Contact Us</a>
-                <a href="#help">Help Center</a>
-                <a href="#beta">Join Beta</a>
-            </nav>
-        </div>
+        <p>Follow us on social media!</p>
     </footer>
+    <button id="scrollToTopBtn" title="Go to top">Top</button>
+ <script src="script.js"></script>
 </body>
 </html>
